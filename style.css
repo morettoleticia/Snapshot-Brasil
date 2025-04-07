@@ -382,21 +382,41 @@ footer {
 /* Footer Content Layout */
 .footer-content {
   display: flex;
-  /* flex-wrap: wrap; */
   justify-content: space-between;
-  align-items: center;
   max-width: 75rem;
   margin: 0 auto 2rem;
   padding: 1rem;
+  gap: 6rem;
+}
+
+/* Info Section */
+.footer-info {
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-info .footer-about {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.footer-info .footer-about h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--forest-light);
 }
 
 /* Contact Section */
 .footer-contact {
-  flex: 1 1 0;
+  flex: 1 1 50%;
 }
 
 .footer-contact h2 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   margin-bottom: 0.5rem;
   color: var(--forest-light);
 }
@@ -474,6 +494,10 @@ footer {
   .footer-content {
     flex-direction: column;
     gap: 1rem;
+  }
+
+  .footer-info .footer-about {
+    width: 100%;
   }
 
   /* Logos Section */
