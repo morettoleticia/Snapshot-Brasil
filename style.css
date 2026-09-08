@@ -282,6 +282,42 @@ a {
 }
 
 /*=============================================================================
+  PARTNERS SECTION
+=============================================================================*/
+.partners-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.partner-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  width: 140px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.partner-item:hover {
+  transform: scale(1.05);
+}
+
+.partner-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.partner-label {
+  font-size: 0.9rem;
+}
+
+/*=============================================================================
   GAlLERY SECTION
 =============================================================================*/
 
